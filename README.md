@@ -11,4 +11,6 @@ The list of scripts contain:
 * publish_SS7_event.py : Publish a SS7 event with an SS7-attack object
 * publish_iot_event.py : Publish a IoT Malware event with simple attributes
 
+These efforts are made to support the GSMA T-ISAC initiative (https://www.gsma.com/security/t-isac/)
+
 We are using PyMISP within POST Luxembourg for our Telecom Intrusion Detection System (TIDS) Solution to fetch and enrich dectection data.
