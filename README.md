@@ -10,6 +10,7 @@ The list of scripts contain:
 * extract_SS7_GT.py : Extract all the offensive GTs from SS7 objects published, write the result into a CSV file
 * publish_SS7_event.py : Publish a SS7 event with an SS7-attack object
 * publish_iot_event.py : Publish a IoT Malware event with simple attributes
+* extract_call_spam.py : Extract fraudulent numbers reported into MISP
 
 These efforts are made to support the GSMA T-ISAC initiative (https://www.gsma.com/security/t-isac/)
 
