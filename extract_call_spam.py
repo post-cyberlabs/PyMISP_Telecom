@@ -3,11 +3,13 @@
 
 from pymisp import ExpandedPyMISP
 from keys import misp_url, misp_key, misp_verifycert
+from phone_iso3166.country import *
 
 # This script is a really simple example on how to extract call spam numbers in Telecom MISP events
 # I then create a file with the phone numbers
 
 f = open('fraud_numbers.txt','w')
+f.write('number,country_iso2\n')
 
 if __name__ == '__main__':
 
@@ -27,7 +29,8 @@ if __name__ == '__main__':
 
 
     for n in numbers:
-        f.write(n)
+        c = phone_country(n)
+        f.write(n+','+c)
         f.write('\n')
 
     f.close()
