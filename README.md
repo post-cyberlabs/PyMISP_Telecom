@@ -15,3 +15,6 @@ The list of scripts contain:
 These efforts are made to support the GSMA T-ISAC initiative (https://www.gsma.com/security/t-isac/)
 
 We are using PyMISP within POST Luxembourg for our Telecom Intrusion Detection System (TIDS) Solution to fetch and enrich dectection data.
+
+## CO Finance by EU - Part of the PISAX project
+![image](https://user-images.githubusercontent.com/1607556/121492977-a77beb80-c9d7-11eb-917c-432ecf4392aa.png)
