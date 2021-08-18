@@ -18,7 +18,7 @@ For any issue on installation please refer to the PyMISP readme for lib install 
 
 ## Usage example
 
-### Flubot Data Collection
+### Flubot Data Extract
 To extract all domains from Flubot data, you can use the following command line:
 ```
 python3 extract_flubot_domains.py
@@ -27,6 +27,24 @@ As an output, a new file will be generated with the following format:
 ```
 YearMonthDay-HourMinute-flubot-domains.txt
 ```
+
+### Flubot Data Import
+To extract all domains from Flubot data, you can use the following command line:
+```
+python3 publish_fluBot_event.py urls-22062021.csv
+```
+urls-22062021.csv being a CSV formated file which contains information as such:
+```
+url,domain
+http://mail.cngtermconsult.ga/click/,mail.cngtermconsult.ga
+http://tochkacompany.ru/path/,tochkacompany.ru
+http://ca1.ir/url/,ca1.ir
+http://entreprisesmgm.com/click/,entreprisesmgm.com
+....
+```
+
+As an output, a new event with a url object will be created on your MISP platform:
+![image](https://user-images.githubusercontent.com/1607556/129906692-fb00a56e-7d50-4860-8fb3-60ff2d85309f.png)
 
 ## Repository content listing
 
