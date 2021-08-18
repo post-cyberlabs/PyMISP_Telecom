@@ -14,6 +14,20 @@ pip3 install pymisp
 ```
 For any issue on installation please refer to the PyMISP readme for lib install tutorial.
 
+* Fill up the file ```keys.py``` with your the MISP url and your own MISP API Key
+
+## Usage example
+
+### Flubot Data Collection
+To extract all domains from Flubot data, you can use the following command line:
+```
+python3 extract_flubot_domains.py
+```
+As an output, a new file will be generated with the following format:
+```
+YearMonthDay-HourMinute-flubot-domains.txt
+```
+
 ## Repository content listing
 
 This repository contains:
