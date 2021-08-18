@@ -49,7 +49,9 @@ As an output, a new event with a url object will be created on your MISP platfor
 ## Repository content listing
 
 This repository contains:
+* extract_flubot_domains.py : Extract all the FLubot domains from URLs and exports them into a txt file
 * extract_SS7_GT.py : Extract all the offensive GTs from SS7 objects published, write the result into a CSV file
+* publish_fluBot_event.py : Publish a Flubot event importing a list of domains from a CSV file
 * publish_SS7_event.py : Publish a SS7 event with an SS7-attack object
 * publish_iot_event.py : Publish a IoT Malware event with simple attributes
 * extract_call_spam.py : Extract fraudulent numbers reported into MISP
