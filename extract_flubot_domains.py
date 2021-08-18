@@ -38,8 +38,10 @@ if __name__ == '__main__':
                 domain = urlparse(e['value']).netloc
                 domains.add(domain)
     
-    print("-- Writing Results to file --")
+    filename = timestr+"-flubot-domains.txt"
+    print("-- Writing Results to file "+filename+" --")
+
     # Write all domains into a file
-    with open(timestr+"-flubot-domains.txt", "w") as outfile:
+    with open(filename, "w") as outfile:
         outfile.write("\n".join(str(d) for d in list(domains)))
     outfile.close()
