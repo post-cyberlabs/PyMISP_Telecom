@@ -19,7 +19,7 @@ if __name__ == '__main__':
     result = misp.search(tags=['Flubot'], return_format='json')
 
     # Set to keep uniqueness of domains 
-    domains = set()
+    domains = []
 
     print("-- Parsing MISP Events --")
     for r in result:
@@ -30,13 +30,13 @@ if __name__ == '__main__':
                     if a['object_relation'] == 'domain':
                         # Parsing domains to make sure we avoid text etc
                         domain = urlparse(a['value']).netloc
-                        domains.add(domain)
+                        domains.append(domain)
 
         elif r['Event']['Attribute']:
             for e in r['Event']['Attribute']:
                 # Parsing domains to make sure we avoid text etc
                 domain = urlparse(e['value']).netloc
-                domains.add(domain)
+                domains.append(domain)
     
     filename = timestr+"-flubot-domains.txt"
     print("-- Writing Results to file "+filename+" --")
